@@ -172,6 +172,6 @@ add_action( 'woocommerce_review_order_after_submit', 'bbloomer_privacy_message_b
  
 function bbloomer_privacy_message_below_checkout_button() {
    ?>
-   <a href="/checkout-page/"  class="button" rel="nofollow">Pay with Splitwise</a>
+   <a href="/checkout-page/"  class="button psplit" rel="nofollow">Pay with Splitwise</a>
 <?php
 }
