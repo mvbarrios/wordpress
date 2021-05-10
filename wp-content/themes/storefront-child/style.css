@@ -1,0 +1,419 @@
+/* 
+Theme Name: Storefront Child 
+Version: 1.0 
+Description: Child theme for Storefront. 
+Author: Woo
+Author URI: http://woocommerce.com 
+Template: storefront 
+*/  
+
+/* --------------- Theme customization starts here ----------------- */
+
+/*Generals*/
+a.button, button, .add_to_cart_button{
+    border-radius: 15px!important;
+    transition: background-color 1s ease;
+}
+.button:hover {
+    background-color: #7fb98d;
+}
+:not(.home) #content > .col-full{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+/*CSS for Header*/
+
+.wc-block-grid__product-onsale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    background: #7fb98d;
+    color: white;
+}
+
+/*CSS for cart in header*/
+.site-header-cart .cart-contents {
+    padding: 1em 0.5em;
+}
+.site-header-cart:hover > li > a {
+    color: #fff;
+    background: #f89f73;
+}
+.site-header-cart .widget_shopping_cart a {
+    font-weight: normal;
+}
+.added_to_cart, 
+.site-header-cart .widget_shopping_cart a.button, 
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+    background-color: #f89f73;
+    border-color: #f89f73;
+    color: #ffffff
+}
+.added_to_cart.alt, .added_to_cart, 
+.widget a.button.checkout,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover, .button.alt {
+    background-color: #7fb98d;
+    border-color: #7fb98d;
+    color: #ffffff;
+}
+
+/*CSS for homepage*/
+.home #content .col-full, .page-template-template-about-me-php #content .col-full{
+    padding: 0;
+    max-width: unset;
+}
+
+.home.page:not(.page-template-template-homepage) .site-header{
+    margin-bottom: 0;
+}
+h2.has-text-align-center {
+    font-weight: 700;
+}
+.woocommerce.columns-4,
+.wc-block-product-new,
+.wc-block-product-on-sale,
+.wc-block-product-best-sellers,
+.wc-block-product-top-rated {
+    padding: 30px 70px;
+}
+.wc-block-grid__products .wc-block-grid__product{
+    margin-bottom: 0;
+}
+li.product-category.product {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 28px -20px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+    transition: background-color 1s ease;
+}
+li.product-category.product:hover {
+    background: #f89f73;
+}
+
+li.product-category.product:hover h2, 
+li.product-category.product:hover mark
+{
+    color:#ffffff;
+}
+.wc-block-grid__product-image, 
+.wc-block-grid__product-title,
+.wc-block-grid__product-price,
+.wp-block-button{
+    background:#ffffff;
+    padding: 15px;
+    margin-bottom: 0!important;
+}
+.wc-block-grid__product-title {
+    height: 120px;
+    font-size: 15px!important;
+}
+li.wc-block-grid__product{
+    transition: all 2s;
+}
+li.wc-block-grid__product:hover{
+    -webkit-box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 28px -20px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+    border: 0;
+}
+.wc-block-grid__product-onsale, .onsale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    background: #f89f73;
+    border-color:#f89f73;
+    color: white;
+}
+del, 
+del bdi{
+    color: red!important;
+    font-size:15px!important;
+}
+.wp-block-product-on-sale, .tit-sale{
+    background: #7fb98d;
+}
+.tit-sale{
+    margin-bottom:0;
+}
+.wp-block-product-on-sale{
+    margin-bottom:20px;
+}
+
+/*CSS For store page*/
+
+li.product{
+    background-color:#ffffff;
+    padding:15px;
+    border-radius: 10px;
+}
+li.product:hover{
+    -webkit-box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 28px -20px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -20px rgb(0 0 0 / 75%);
+}
+.woocommerce-Price-amount bdi{
+    font-weight: 500;
+    font-size:18px;
+    color:#000000;
+}
+
+/*CSS for cart, checkout page and technical details tab in product page*/
+
+table:not( .has-background ) th, .has-background td.table-header {
+    background-color: #7fb98d;
+    color: #ffffff;
+}
+
+.has-background td.table-header{
+    width:25%;
+    border-bottom: 1px solid #f7f7f7;
+}
+.has-background td.table-information{
+    width:75%;
+    font-weight: 600;
+}
+
+/*CSS for product page*/
+
+.single .content-area {
+    width: 90%;
+    float: none;
+    margin: auto;
+}
+.single #content > .col-full{
+    background:#ffffff;
+}
+.single h1{
+    font-size: 26px;
+    text-align: justify;
+}
+p.price {
+    text-align: center;
+}
+
+.storefront-sticky-add-to-cart .coll-full{
+    max-width: 76.498938em;
+}
+.storefront-sticky-add-to-cart__content-product-info{
+    width:70%;
+}
+
+
+/*Style for tables in product description*/
+
+th.apm-center {
+    width: 33%;
+}
+
+/*CSS for template about me*/
+
+.page-template-template-about-me-php .content-area {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.page-template-template-about-me-php .content-area,
+.page-template-template-about-me-php main {
+    margin-bottom:0px;
+}
+.pad h2, .pad h3{
+    text-align: center;
+}
+
+.fifty, .six{
+    width: 100%;
+}
+.six{
+    margin-bottom: 10px;
+}
+.complete{
+    padding: 60px 0px;
+    width: 100%;
+}
+.map, .tit{
+    margin: auto;
+}
+.complete .inner{
+    margin-top:20px;
+}
+/*CSS for location section*/
+
+#location{
+    background-color: #ffffff;
+}
+.c-green{
+    background-color: #7fb98d;
+    padding:20px;
+}
+.c-green h2{
+    color:#ffffff;
+}
+/*CSS for presenting section*/
+#presenting{
+    padding:60px 0;
+}
+#presenting .complete{
+    padding:80px 20px;
+}
+
+/*CSS  for tech section*/
+#tech{
+    background-color: #f89f73;
+}
+#tech h2{
+    font-weight: 600;
+    color:#ffffff;
+}
+#tech img {
+    margin:auto;
+}
+#tech .complete .inner{
+    margin-top:60px;
+}
+
+/*CSS  for past work*/
+.c-pad{
+    padding: 20px 0;
+}
+.c-pad h2{
+    margin: auto;
+}
+.code{
+    background: url("http://localhost/applaudoTest/wp-content/uploads/2021/05/code.jpg") no-repeat;
+    background-size:cover;
+    padding:170px;
+}
+
+/*CSS for footer*/
+
+.site-info {
+    text-align: center;
+}
+
+/*Media Query */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .page-template-template-about-me-php #content .col-full {
+      margin:0;
+    }
+    /*CSS for past work section*/
+    .c-pad{
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 767px) {
+    /**/
+    /*CSS for header */
+    .woocommerce-active .site-header .site-branding {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .site-header .site-branding img {
+        margin: auto;
+    }
+    .storefront-primary-navigation {
+        background-color: #7fb98d;
+    }
+    .main-navigation ul li a:hover, 
+    .main-navigation ul li:hover > a, 
+    .site-title a:hover, 
+    .site-header ul.menu li.current-menu-item > a {
+        border-bottom: 5px solid #f89f73;
+        color:#ffffff;
+    } 
+    ul.menu li a{
+        color:#ffffff;
+        font-weight:600;
+    }
+    .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+        padding: 0.8em 1em;
+    }
+    .sub-menu{
+        background-color:#f89f73!important;
+        border-radius: 10px;
+    }
+    /*CSS for shop page*/
+    h2.woocommerce-loop-product__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    /*CSS for product page */
+    
+    /*Change tabs vertically to horizontally*/
+
+    .woocommerce-tabs ul.tabs {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    .woocommerce-tabs ul.tabs li {
+        display: inline-block;
+        width: 25%;
+        transition: all .8s;
+    }
+    .woocommerce-tabs .panel {
+        width: 100%;
+    }
+    .woocommerce-tabs ul.tabs li:hover, 
+    .woocommerce-tabs ul.tabs li.active {
+        background: #f89f73;
+    }
+    .woocommerce-tabs ul.tabs li:hover a, 
+    .woocommerce-tabs ul.tabs li.active a {
+        color:white;
+    }
+    .woocommerce-tabs ul.tabs li a {
+        padding: 15px;
+        text-align: center;
+        color:#000;
+    }
+    a:focus, button:focus, 
+    .button.alt:focus, 
+    input:focus, 
+    textarea:focus, 
+    input[type="button"]:focus, 
+    input[type="reset"]:focus, 
+    input[type="submit"]:focus, 
+    input[type="email"]:focus, 
+    input[type="tel"]:focus, 
+    input[type="url"]:focus, 
+    input[type="password"]:focus, 
+    input[type="search"]:focus {
+        outline:none;
+    }
+    .woocommerce-tabs ul.tabs li:after {
+        display:none;
+    }
+    /*CSS page about me*/
+    .fifty{
+        padding:40px 0;
+        width: 50%;
+        display:inline-flex;
+    }
+    .inner{
+        display: flex;
+    }
+    .six{
+        width:16.666%;
+        padding: 0 5px;
+    }
+    #presenting .complete {
+        padding: 80px;
+    }
+    /*CSS for tech section*/
+    #tech{
+        padding:120px 0;
+    }
+    /*CSS for past work*/
+    .c-pad{
+        padding: 0 20px;
+    }
+    .code{
+        padding:170px;
+    }
+}
