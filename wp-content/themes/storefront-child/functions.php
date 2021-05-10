@@ -60,6 +60,7 @@ function custom_storefront_credit() {
    </div><!-- .site-info -->
 <?php
 }
+
  /**
  * Show extra data in tables, each category has its own table with information
  */
@@ -163,3 +164,14 @@ function technical_tab_content() {
    <?php
    }
 } 
+
+ /**
+ * Add button for pay with splitwise
+ */
+add_action( 'woocommerce_review_order_after_submit', 'bbloomer_privacy_message_below_checkout_button' );
+ 
+function bbloomer_privacy_message_below_checkout_button() {
+   ?>
+   <a href="/checkout-page/"  class="button" rel="nofollow">Pay with Splitwise</a>
+<?php
+}

@@ -37,32 +37,32 @@ get_header(); ?>
                    <div class="inner">
                        <div class="six">
                            <div class="image">
-                               <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/WordPress.png" alt="wordpress">
+                               <img src="http://localhost/wordpress/wp-content/uploads/2021/05/WordPress.png" alt="wordpress">
                             </div>
                         </div>
                        <div class="six">
                            <div class="image">
-                               <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/Shopify.png" alt="shopify">
+                               <img src="http://localhost/wordpress/wp-content/uploads/2021/05/Shopify.png" alt="shopify">
                             </div>
                         </div>
                        <div class="six">
                             <div class="image">
-                                <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/HTML.png" alt="html">
+                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/HTML.png" alt="html">
                             </div>
                        </div>
                        <div class="six">
                             <div class="image">
-                                <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/CSS.png"alt="css">
+                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/CSS.png"alt="css">
                             </div>
                        </div>
                        <div class="six">
                             <div class="image">
-                                <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/PHP.png"alt="php">
+                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/PHP.png"alt="php">
                             </div>
                        </div>
                        <div class="six">
                             <div class="image">
-                                <img src="http://localhost/applaudoTest/wp-content/uploads/2021/05/JS.png"alt="js">
+                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/JS.png"alt="js">
                             </div>
                        </div>
                    </div>
